@@ -1,0 +1,23 @@
+.bgsecond {
+    background-color: $second-bg-color;
+    &__img {
+        margin: 5rem 0;
+    }
+    &__content {
+        &__title {
+            margin: 4rem 0rem 2rem;
+            font-size: 3rem;
+            font-weight: 600;
+        }
+        &__desc {
+            padding-right: 6rem;
+            margin-bottom: 1rem;
+            // @include tablet {
+            //     padding-right: unset;
+            // }
+            @include mobile{
+                padding-right: unset;
+            }
+        }
+    }
+}

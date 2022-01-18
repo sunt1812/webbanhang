@@ -1,0 +1,62 @@
+.footer {
+    background-color:$second-bg-color;
+    &__item {
+        padding: 5rem 0;
+        &__title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        &__list {
+            a {
+                line-height: 2;
+                transition: all .3s ease;
+                &:hover {
+                    color: $red;
+                    margin-left: 0.6rem;
+                }
+            }
+        }
+        &__contact {
+            text-align: center;
+            &__logo {
+                font-size: 2.4rem;
+                font-weight: 600;
+            }
+            &__icon {
+                margin: 2rem 0;
+                i {
+                    font-size: 1.8rem;
+                    padding: 0rem .5rem;
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+        &__subscribe {
+            position: relative;
+            input {
+                width: 100%;
+                padding: 1rem 2rem;
+                background-color: $main-bg-color;
+                outline: none;
+                border: none;
+            }
+            button {
+                position: absolute;
+                top: 15%;
+                right:2%;
+                background-color: $red;
+                border: none;
+                padding:.6rem 1rem;
+                color: $btn-color;
+                text-transform: uppercase;
+                &:hover {
+                    background-color: $btn-bg;
+                    color: $btn-color;
+                }
+            }
+        }
+    }
+}

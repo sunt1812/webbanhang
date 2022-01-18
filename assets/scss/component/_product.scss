@@ -1,0 +1,67 @@
+.product {
+    &__card {
+        text-align: center;
+        transition: all .3s ease;
+        &:hover {
+            background-color:$third-bg-color;
+        }
+        &__img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            height: 300px;
+            img {
+                transition: all .3s ease;
+                max-height: 100%;
+            }
+            img:nth-child(2) {
+                display: none;
+            }
+        }
+        &:hover img:nth-child(2) {
+            display: block;
+        }
+        &:hover img:nth-child(1) {
+            display: none;
+        }
+        &__name {
+            margin-top: 1rem;
+            font-size: 1.4rem;
+        }
+        &__price {
+            .curr-price {
+                color: $red;
+                font-size: 1.4rem;
+                font-weight: 600;
+                margin-left: .6rem;
+            }
+            padding: 0 0 1.5rem 0;
+        }
+    }
+    .product-btn {
+        transform: translateY(30px);
+        transition: all .3s ease-in-out;
+        visibility: hidden;
+        .btn-flat {
+            border: none;
+            background-color: $btn-bg;
+            padding:.5rem .7rem;
+            color: $btn-color;
+            text-transform: uppercase;
+            font-weight: 800;
+            &:hover {
+                background-color: $btn-color;
+                color: $btn-bg;
+            }
+        }
+    }
+    &__card:hover .product-btn {
+        transform: translateY(0px);
+        visibility: visible;
+    }
+    .button {
+        text-align: center;
+        margin: 2rem 0 7rem;
+    }
+}

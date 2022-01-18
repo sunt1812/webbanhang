@@ -1,0 +1,122 @@
+.hero {
+    height: calc(100vh - 150px);
+    @include tablet {
+        height: calc(80vh);
+    }
+    @include mobile {
+        height: calc(70vh);
+    }
+    .slider {
+        height: 100%;
+        position: relative;
+        &__item {
+            display: flex;
+            height: 0%;
+            overflow: hidden;
+            visibility: hidden;
+            @include tablet {
+                flex-direction: column-reverse;
+            }
+            @include mobile {
+                flex-direction: column-reverse;
+            }
+            &.active {
+                visibility: visible;
+                height: 100%;
+            }
+            &__content {
+                width: 50%;
+                @include tablet {
+                    width: 100%;
+                    padding-bottom: 7rem;
+                }
+                @include mobile {
+                    width: 100%;
+                    padding-bottom: 5rem;
+                }
+                &__title {
+                    margin-top: 4.5rem;
+                    margin-bottom: .8rem;
+                    @include mobile {
+                        margin: unset;
+                    }
+                }
+                &__subtitle {
+                    font-size: 4.4rem;
+                    margin-bottom: 2rem;
+                    @include mobile {
+                       font-size: 2.4rem;
+                       margin: unset;
+                    }
+                }
+                &__desc {
+                    @include tablet {
+                        display: none;
+                    }
+                    @include mobile {
+                        display: none;
+                    }
+                }
+            }
+            &__images {
+                width: 50%;
+                margin-top: -4.7rem;
+                @include tablet {
+                    width: 60%;
+                    margin: 0 auto;
+                }
+                @include mobile {
+                    width: 80%;
+                    margin: 0 auto;
+                   img {
+                       max-width: 300px;
+                   }
+                }
+            }
+        }
+    }
+    .slide-controll {
+        position: absolute;
+        top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 50%;
+        border: none;
+        transition: all .4s ease;
+        font-size: 1.8rem;
+        &:hover {
+            background-color: $btn-bg;
+            color: $btn-color;
+         }
+    }
+    .slide-next {
+        left: 5rem;
+        @include tablet {
+            left: 19.5rem;
+            top: unset;
+            bottom: 3%;
+        }
+        @include mobile {
+            left: 10.5rem;
+            top: unset;
+            bottom: 3%;
+        }
+    }
+    .slide-prev {
+        right: 8rem;
+        @include tablet {
+            right: 19.5rem;
+            top: unset;
+            bottom: 3%;
+        }
+        @include mobile {
+            right: 10.5rem;
+            top: unset;
+            bottom: 3%;
+        }
+    }
+
+}

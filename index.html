@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ast Shop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- menu mobile -->
+        <div class="mobile-menu bg-second">
+            <a href="#" class="mb-logo">ATShop</a>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class="bx bx-menu"></i>
+            </span>
+        </div>
+        <!--end menu mobile -->
+        <header class="header">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class="bx bx-x"></i>
+            </span>
+            <div class="header__second">
+                <div class="header__top container">
+                    <ul class="header__top__list">
+                        <li class="header__top__list__item">
+                            <a href="#" class="header__top__list__item__link">
+                                +840123456789
+                            </a>
+                        </li>
+                        <li class="header__top__list__item">
+                            <a href="#" class="header__top__list__item__link">
+                                atshop@mail.com
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__top__list">
+                        <li class="header__top__list__item dropdown">
+                            <a href="#" class="header__top__list__item__link">
+                                USD 
+                            </a>
+                            <i class='bx bxs-chevron-down'></i>
+                            <ul class="dropdown_content">
+                                <li>
+                                    <a href="#">vnd</a>
+                                </li>
+                                <li>
+                                    <a href="#">vnd</a>
+                                </li>
+                                <li>
+                                    <a href="#">vnd</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__top__list__item dropdown">
+                            <a href="#" class="header__top__list__item__link">
+                                ENGLISH
+                            </a>
+                            <i class='bx bxs-chevron-down'></i>
+                            <ul class="dropdown_content">
+                                <li>
+                                    <a href="#">VIETNAMESE</a>
+                                </li>
+                                <li>
+                                    <a href="#">JANPANESE</a>
+                                </li>
+                                <li>
+                                    <a href="#">PRENCH</a>
+                                </li>
+                                <li>
+                                    <a href="#">SPANISH</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__top__list__item">
+                            <a href="#" class="header__top__list__item__link">
+                                ORDER TRACKING 
+                            </a>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+            <div class="header__gb">
+                <div class="header__main container">
+                    <a href="#" class="header__main__logo">
+                        ATShop
+                    </a>
+                    <div class="header__main__seach">
+                        <input type="text" placeholder="Search">
+                        <i class='bx bx-search-alt' ></i>
+                    </div>
+                    <a href="#" class="header__main__icon">
+                        <i class='bx bx-bell'></i>
+                        <i class='bx bx-user-circle'></i>
+                        <i class='bx bx-cart' ></i>
+                    </a>
+                </div>
+            </div>
+            <div class="header__second">
+                <div class="header__bottom container">
+                    <ul class="header__bottom__list">
+                        <li class="header__bottom__list__item">
+                            <a href="#" class="header__bottom__list__item__link">
+                                home
+                            </a>
+                        </li>
+                        <li class="header__bottom__list__item dropdown-mega">
+                            <a href="#" class="header__bottom__list__item__link">
+                                shop
+                                <i class='bx bxs-chevron-down'></i>
+                            </a>
+                            <div class="dropdown-mega__content">
+                                <div class="row">
+                                    <div class="col-3 col-md-12 col-sm-12">
+                                        <div class="dropdown-mega__content__box">
+                                            <h3 class="dropdown-mega__content__box__title">
+                                                category
+                                            </h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Wireless</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Inear headphone</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Wireless</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Wireless</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <img src="./images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png" alt="">
+                                    </div>
+                                    <div class="col-3 col-md-12 col-sm-12">
+                                        <div class="dropdown-mega__content__box">
+                                            <h3 class="dropdown-mega__content__box__title">
+                                                category
+                                            </h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Wireless</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Inear headphone</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Wireless</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Wireless</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <img src="./images/JBL_TUNE220TWS_ProductImage_Pink_ChargingCaseOpen.png" alt="">
+                                    </div>
+                                    <div class="col-3 col-md-12 col-sm-12">
+                                        <div class="dropdown-mega__content__box">
+                                            <h3 class="dropdown-mega__content__box__title">
+                                                category
+                                            </h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Wireless</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Inear headphone</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Wireless</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Wireless</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <img src="./images/JBL_JR 310BT_Product Image_Hero_Skyblue.png" alt="">
+                                    </div>
+                                    <div class="col-3 col-md-12 col-sm-12">
+                                        <div class="dropdown-mega__content__box">
+                                            <h3 class="dropdown-mega__content__box__title">
+                                                category
+                                            </h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Wireless</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Inear headphone</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Wireless</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Wireless</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <img src="./images/JBLHorizon_001_dvHAMaster.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__bottom__list__item">
+                            <a href="#" class="header__bottom__list__item__link">
+                                blog
+                            </a>
+                        </li>
+                        <li class="header__bottom__list__item">
+                            <a href="#" class="header__bottom__list__item__link">
+                                contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="slider container">
+                <div class="slider__item active">
+                    <div class="slider__item__content">
+                        <h3 class="slider__item__content__title">
+                            JBL TUNE 750TNC
+                        </h3>
+                        <h2 class="slider__item__content__subtitle">
+                            Next-gen design
+                        </h2>
+                        <p class="slider__item__content__desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor commodi dignissimos culpa, eaque eos necessitatibus possimus veniam, cupiditate rerum deleniti? Libero, ducimus error? Beatae velit dolore sint explicabo! Fugit.
+                        </p>
+                        <div class="button">
+                            <a href="#" class="btn">shop now</a>
+                        </div>
+                    </div>
+                    <div class="slider__item__images">
+                        <img src="./images/JBL_E55BT_KEY_RED_6063_FS_x1-1605x1605px.webp" alt="" class="slider__item__images__img">
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item__content">
+                        <h3 class="slider__item__content__title">
+                            JBL TUNE 350 gf
+                        </h3>
+                        <h2 class="slider__item__content__subtitle">
+                            Lorem ipsum
+                        </h2>
+                        <p class="slider__item__content__desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor commodi dignissimos culpa, eaque eos necessitatibus possimus veniam, cupiditate rerum deleniti? Libero, ducimus error? Beatae velit dolore sint explicabo! Fugit.
+                        </p>
+                        <div class="button">
+                            <a href="#" class="btn">shop now</a>
+                        </div>
+                    </div>
+                    <div class="slider__item__images">
+                        <img src="./images/JBL_E55BT_KEY_BLACK_6175_FS_x1-1605x1605px.png" alt="" class="slider__item__images__img">
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item__content">
+                        <h3 class="slider__item__content__title">
+                            JBL TUNE 346 th
+                        </h3>
+                        <h2 class="slider__item__content__subtitle">
+                            Next-gen 
+                        </h2>
+                        <p class="slider__item__content__desc">
+                            Lorem ipsum dolorecati dolor commodi dignissimos culpa, eaque eos necessitatibus possimus veniam, cupiditate rerum deleniti? Libero, ducimus error? Beatae velit dolore sint explicabo! Fugit.
+                        </p>
+                        <div class="button">
+                            <a href="#" class="btn">shop now</a>
+                        </div>
+                    </div>
+                    <div class="slider__item__images">
+                        <img src="./images/JBL_JR 310BT_Product Image_Hero_Skyblue.png" alt="" class="slider__item__images__img">
+                    </div>
+                </div>
+                <button class="slide-controll slide-prev">
+                    <i class="bx bxs-chevron-right"></i>
+                </button>
+                <button class="slide-controll slide-next">
+                    <i class="bx bxs-chevron-left"></i>
+                </button>
+            </div>
+        </section>
+        <section class="promotion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-md-12 col-sm-12">
+                        <div class="promotion__box">
+                            <div class="promotion__box__content">
+                                <h4 class="promotion__box__content__title">
+                                    Headphone & Earbuds
+                                </h4>
+                                <div class="button">
+                                    <a href="#" class="btn">shop collection</a>
+                                </div>
+                            </div>
+                            <img src="./images/JBLHorizon_001_dvHAMaster.png" alt="" class="promotion__box__images">
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-12 col-sm-12">
+                        <div class="promotion__box">
+                            <div class="promotion__box__content">
+                                <h4 class="promotion__box__content__title">
+                                    Headphone & Earbuds
+                                </h4>
+                                <div class="button">
+                                    <a href="#" class="btn">shop collection</a>
+                                </div>
+                            </div>
+                            <img src="./images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png" alt="" class="promotion__box__images">
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-12 col-sm-12">
+                        <div class="promotion__box">
+                            <div class="promotion__box__content">
+                                <h4 class="promotion__box__content__title">
+                                    Headphone & Earbuds
+                                </h4>
+                                <div class="button">
+                                    <a href="#" class="btn">shop collection</a>
+                                </div>
+                            </div>
+                            <img src="./images/JBL_TUNE220TWS_ProductImage_Pink_ChargingCaseOpen.png" alt="" class="promotion__box__images">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product">
+            <div class="container">
+                <div class="heading">
+                    <div class="heading__title">
+                        LATEST PRODUCT
+                    </div>
+                </div>
+                <div class="row" id="latest-products">
+                    <div class="col-3 col-md-6 col-sm-12">
+                        <div class="product__card">
+                            <div class="product__card__img">
+                                <img src="./images/JBL_Quantum_400_Product Image_Hero 02.png" alt="">
+                                <img src="./images/JBL_Quantum_400_Product Image_Hero Mic Up.webp" alt="">
+                            </div>
+                            <div class="product__card__info">
+                                <div class="product-btn">
+                                    <button class="btn-flat btn-hover btn-shop-now">shop now</button>
+                                    <button class="btn-flat btn-hover btn-cart-add">
+                                        <i class="bx bxs-cart-add"></i>
+                                    </button>
+                                    <button class="btn-flat btn-hover btn-cart-add">
+                                        <i class="bx bxs-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="product__card__name">
+                                    JBL Quantum 400
+                                </div>
+                                <div class="product__card__price">
+                                    <span><del>$300</del></span>
+                                    <span class="curr-price">$200</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="#" class="btn">view all</a>
+                </div>
+            </div>
+        </section>
+        <section class="bgsecond">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="./images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png" alt="" class="bgsecond__img">
+                    </div>
+                    <div class="col-8">
+                        <div class="bgsecond__content">
+                            <div class="bgsecond__content__title">
+                                JBL TUNE 750TNC
+                            </div>
+                            <p class="bgsecond__content__desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dignissimos itaque et eaque quod harum vero autem? Reprehenderit enim non voluptate! Qui provident modi est non eius ratione, debitis iure.
+                            </p>
+                            <div class="button">
+                                <a href="#" class="btn">view all</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product"> 
+            <div class="container">
+                <div class="heading">
+                    <div class="heading__title">
+                        BEST SELLING
+                    </div>
+                </div>
+                <div class="row" id="best-products">
+                    <div class="col-3 col-md-6 col-sm-12">
+                        <div class="product__card">
+                            <div class="product__card__img">
+                                <img src="./images/JBL_Quantum_400_Product Image_Hero 02.png" alt="">
+                                <img src="./images/JBL_Quantum_400_Product Image_Hero Mic Up.webp" alt="">
+                            </div>
+                            <div class="product__card__info">
+                                <div class="product-btn">
+                                    <button class="btn-flat btn-hover btn-shop-now">shop now</button>
+                                    <button class="btn-flat btn-hover btn-cart-add">
+                                        <i class="bx bxs-cart-add"></i>
+                                    </button>
+                                    <button class="btn-flat btn-hover btn-cart-add">
+                                        <i class="bx bxs-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="product__card__name">
+                                    JBL Quantum 400
+                                </div>
+                                <div class="product__card__price">
+                                    <span><del>$300</del></span>
+                                    <span class="curr-price">$200</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="#" class="btn">view all</a>
+                </div>
+            </div>
+        </section>
+        <section class="blog">
+            <div class="container">
+                <div class="heading">
+                    <div class="heading__title">
+                        LATEST BLOG
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-md-12 col-sm-12">
+                        <div class="blog__images">
+                            <img src="./images/JBL_Quantum400_Lifestyle1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-12 col-sm-12">
+                        <div class="blog__content">
+                            <div class="blog__content__title">
+                                Lorem ipsum dolor sit amet
+                            </div>
+                            <p class="blog__content__desc">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, eligendi dolore. Sapiente omnis numquam mollitia asperiores animi, veritatis sint illo magnam, voluptatum labore, quam ducimus! Nisi doloremque praesentium laudantium repellat.                            </p>
+                            <div class="button">
+                                <a href="#" class="btn">view all</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-revere">
+                    <div class="col-6 col-md-12 col-sm-12">
+                        <div class="blog__images">
+                            <img src="./images/JBL_TUNE220TWS_Lifestyle_black.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-12 col-sm-12">
+                        <div class="blog__content">
+                            <div class="blog__content__title">
+                                Lorem ipsum dolor sit amet
+                            </div>
+                            <p class="blog__content__desc">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, eligendi dolore. Sapiente omnis numquam mollitia asperiores animi, veritatis sint illo magnam, voluptatum labore, quam ducimus! Nisi doloremque praesentium laudantium repellat.                            </p>
+                            <div class="button">
+                                <a href="#" class="btn">view all</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button buttons">
+                    <a href="#" class="btn">view all</a>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 col-md-6 col-sm-6">
+                        <div class="footer__item">
+                            <h5 class="footer__item__title">
+                                PRODUCTS
+                            </h5>
+                            <ul class="footer__item__list">
+                                <li>
+                                    <a href="#">Help Center</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Product Help</a>
+                                </li>
+                                <li>
+                                    <a href="#">Warranty</a>
+                                </li>
+                                <li>
+                                    <a href="#">Order Status</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-6 col-sm-6">
+                        <div class="footer__item">
+                            <h5 class="footer__item__title">
+                                PRODUCTS
+                            </h5>
+                            <ul class="footer__item__list">
+                                <li>
+                                    <a href="#">Help Center</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Product Help</a>
+                                </li>
+                                <li>
+                                    <a href="#">Warranty</a>
+                                </li>
+                                <li>
+                                    <a href="#">Order Status</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-6 col-sm-6">
+                        <div class="footer__item">
+                            <h5 class="footer__item__title">
+                                PRODUCTS
+                            </h5>
+                            <ul class="footer__item__list">
+                                <li>
+                                    <a href="#">Help Center</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Product Help</a>
+                                </li>
+                                <li>
+                                    <a href="#">Warranty</a>
+                                </li>
+                                <li>
+                                    <a href="#">Order Status</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-6 col-sm-6">
+                        <div class="footer__item">
+                            <div class="footer__item__contact">
+                                <h3 class="footer__item__contact__logo">
+                                    ATShop
+                                </h3>
+                                <a href="#" class="footer__item__contact__icon">
+                                    <i class='bx bxl-facebook-circle'></i>
+                                    <i class="bx bxl-instagram-alt"></i>
+                                    <i class="bx bxl-youtube"></i>
+                                    <i class="bx bxl-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="footer__item__subscribe">
+                                <input type="email" placeholder="ENTER YOUR EMAIL">
+                                <button>subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
+<!-- sass ./assets/scss/app.scss ./assets/css/app.css --watch -->

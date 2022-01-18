@@ -1,0 +1,13 @@
+.blog {
+    &__content {
+        padding: 0 2.5rem;
+        &__title {
+            font-size: 2rem;
+            padding: 3rem 0 2rem;
+        }
+        &__desc {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.promotion {
+    margin-top: 2rem;
+    &__box {
+        display: flex;
+        background-color: $third-bg-color;
+        @include tablet {
+            justify-content: space-between;
+            align-items: center;
+        }
+        @include mobile {
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__content {
+            padding: 20px;
+            &__title {
+                font-size: 1.4rem;
+            }
+        }
+        &__images {
+            width: 150px;
+            transition: all .3s ease;
+        }
+        &:hover &__images {
+            transform: scale(1.1);
+        }
+    }
+}

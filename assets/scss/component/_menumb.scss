@@ -1,0 +1,49 @@
+.bg-second {
+    background-color: $second-bg-color;
+    display: none;
+}
+span#mb-menu-close {
+    display: none;
+}
+@include tablet {
+    .mobile-menu {
+        display: flex;
+        padding: 10px 20px;
+        justify-content: space-between;
+        align-items: center;
+        .mb-logo {
+            font-size: 25px;
+            font-weight: 700;
+        }
+        .mb-menu-toggle {
+            font-size: 2rem;
+        }
+    }
+    span#mb-menu-close {
+        display: block;
+    }
+    .bg-second {
+        background-color: $second-bg-color;
+    }
+}
+@include mobile {
+    .mobile-menu {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    .mb-logo {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .mb-menu-toggle {
+        font-size: 2rem;
+    }
+}
+span#mb-menu-close {
+    display: block;
+}
+.bg-second {
+    background-color: $second-bg-color;
+}
+}
